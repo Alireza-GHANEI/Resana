@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GangSite</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="button.css">
+  <script src="./recordingOperation.js"></script>
+  <script src="./microm.js"></script>
+  <script src="./microm_record.js"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a class="font1" href="#sounds">Sounds</a></li>
+      <li><a class="font1" href="#train">Train</a></li>
+    </ul>
+  </div>
+
+  <div class="upload">
+    <div id="ToHideWhenRec">
+      <button class="button1">Upload a file</button>
+      <button class="button2" onclick="start()" id="button1">Record now</button>
+    </div>
+    <span id="spanRec" class="showSpanRec">recording...</span>
+    <div id="circle" class="showRecCircle"></div>
+    <button id="stopRecButt" onclick="openModal()" class="buttonStopRec">STOP RECORDING</button>
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close" onclick="closeModall()">&times;</span>
+        <h1 >save recorded sound</h1>
+        <span style="float: left;">Name</span> <br>
+        <input style="float: left;" class="searchboxModal" type="search" placeholder="2022-4-4 18_8_29">
+        <br> <br>
+        <span style="float: left;">Class Type</span>
+        <br>
+        <select name="select_modal" id="select_modal" class="select_modal">
+          <option value="cA">Class A</option>
+          <option value="cB">Class B</option>
+          <option value="cC">Class C</option>
+          <option value="cD">Class D</option>
+        </select>
+        <br><br>
+        <button class="saveButModal button2" onclick="showMessageSave()">Save & Stop</button>
+        <button class="continueButModal button1" onclick="showMessageSave()">Save & Continue</button>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <br>
+
+  <input type="checkbox" id="checkbox" class="checkbox">
+  <label class="middle" for="checkbox"> Automatically stop recording after</label>
+  <input type="number" id="number" min="1" max="5">
+  <label class="middle" for="number">seconds</label>
+
+  <hr>
+
+  <div class="bottomLeft">
+
+    <h2 style="display:inline;">Class Types</h2>
+    <button class="button1 button3">Add Class</button><br>
+
+    <input type="checkbox" id="checkbox1" class="checkboxx">
+    <label class="bottom" style="font-weight:bold; display:inline;" for="checkbox1">All</label>
+    <input class="searchbox" type="search" placeholder="search text">
+    <br>
+    <input type="checkbox" id="checkbox2" class="checkboxx">
+    <label class="bottom" style="font-weight:bold;" for="checkbox1">jiojijoi</label>
+    <br>
+    <input type="checkbox" id="checkbox3" class="checkboxx">
+    <label class="bottom" style="font-weight:bold;" for="checkbox1">C1</label>
+
+  </div>
+
+  <div class="title-bar">
+    <div class="title" style="margin-left: 8px; margin-right: 30px;">Name</div>
+    <div class="title">Class Type</div>
+    <div class="title">Date</div>
+    <div class="title" style="margin-left: 24.3%;">More</div>
+  </div>
+
+  <div class="row">
+
+    <div class="play-box">
+      <small style="font-size: 18px;">guigui</small>
+      <small style="float: right; font-size:18px;"> 00:10 </small><br><br>
+      <div class="botón position divPlay" onclick="this.classList.toggle('active')">
+        <div class="fondo" x="0" y="0" width="200" height="200"></div>
+        <div class="icono" width="200" height="200">
+          <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+          <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+        </div>
+        <div class="puntero"></div>
+      </div>
+
+    </div>
+
+    <select name="select-1" id="select-1" class="level">
+      <option value="C1">C1</option>
+      <option value="C2">C2</option>
+      <option value="C3">C3</option>
+      <option value="C4">C4</option>
+    </select>
+
+    <div id="datetime-1" class="datetime">2022-09-08 10-22-14</div>
+
+    <div class="dropdown">
+      <div class="moreSign"></div>
+      <div class="dropdown-content">
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="play-box">
+      <small style="font-size: 18px;">2022-7-5 8_45_41</small>
+      <small style="float: right; font-size:18px;"> 00:10 </small><br><br>
+      <div class="botón position divPlay" onclick="this.classList.toggle('active')">
+        <div class="fondo" x="0" y="0" width="200" height="200"></div>
+        <div class="icono" width="200" height="200">
+          <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+          <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+        </div>
+        <div class="puntero"></div>
+      </div>
+
+    </div>
+
+    <select name="select-1" id="select-1" class="level">
+      <option value="C1">C1</option>
+      <option value="C2">C2</option>
+      <option value="C3">C3</option>
+      <option value="C4">C4</option>
+    </select>
+
+    <div id="datetime-1" class="datetime">2022-08-12 28-45-43</div>
+
+    <div class="dropdown">
+      <div class="moreSign"></div>
+      <div class="dropdown-content">
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
