@@ -1,0 +1,60 @@
+{
+    "nameOfClasses": [
+        "a",
+        "b",
+        "c",
+        "d"
+    ],
+    "tracks": [
+        {
+            "name": "track1",
+            "class": "a",
+            "id": "1670270420174"
+        },
+        {
+            "name": "track2",
+            "class": "a",
+            "id": "1670270465415"
+        },
+        {
+            "name": "track3",
+            "class": "a",
+            "id": "1670270475385"
+        },
+        {
+            "name": "track4",
+            "class": "b",
+            "id": "1670270486223"
+        },
+        {
+            "name": "track3",
+            "class": "b",
+            "id": "1670270486223"
+        },
+        {
+            "name": "track7",
+            "class": "a",
+            "id": "1670272202496"
+        },
+        {
+            "name": "kjkj",
+            "class": "b",
+            "id": "1670272202496"
+        },
+        {
+            "name": "track8",
+            "class": "b",
+            "id": "1670272267839"
+        },
+        {
+            "name": "ali",
+            "class": "c",
+            "id": "1670322782403"
+        },
+        {
+            "name": "track Victory",
+            "class": "d",
+            "id": "1670324048919"
+        }
+    ]
+}

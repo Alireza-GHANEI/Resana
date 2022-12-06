@@ -5,6 +5,13 @@ ul {
   overflow: hidden;
 }
 
+
+/* 
+.sectionBottomRight{
+
+}
+ */
+
 li {
   float: left;
 }
@@ -108,7 +115,7 @@ label.bottom {
 
 div.bottomLeft {
   background-color: #f7f7f7;
-  height: 39vh;
+  height: 40%;
   margin-left: 20px;
   padding-left: 10px;
   margin-top: 0px;
@@ -188,6 +195,10 @@ div.title-bar {
   border-radius: 6px;
   width: 60%;
 }
+
+/* div.bottomRightti{
+  float: right;
+} */
 
 .title {
   color: black;
@@ -292,7 +303,7 @@ select.level {
 
 .showRecCircle {
   display: none;
-  margin-left: 50vw;
+  margin-left: 48.5vw;
 }
 
 .buttonStopRec {
@@ -341,7 +352,8 @@ input.searchboxModal {
 
 
 /* The Modal (background) */
-.modal {
+div.modal{  
+  
   display: none;
   /* Hidden by default */
   position: fixed;
